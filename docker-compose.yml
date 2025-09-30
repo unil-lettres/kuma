@@ -6,7 +6,7 @@ name: kuma
 
 services:
   kuma-app:
-    image: louislam/uptime-kuma:2.0.0-beta-slim.3
+    image: louislam/uptime-kuma:beta
     depends_on:
       kuma-mysql:
         condition: service_healthy
