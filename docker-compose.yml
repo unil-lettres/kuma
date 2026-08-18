@@ -6,7 +6,7 @@ name: kuma
 
 services:
   kuma-app:
-    image: louislam/uptime-kuma:beta
+    image: louislam/uptime-kuma:next
     depends_on:
       kuma-mysql:
         condition: service_healthy
@@ -26,7 +26,7 @@ services:
       - kuma-net
     container_name: kuma-app
   kuma-mysql:
-    image: mariadb:11.4
+    image: mariadb:12.3
     ports:
       - "127.0.0.1:3312:3306"
     healthcheck:
