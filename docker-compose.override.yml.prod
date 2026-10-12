@@ -6,14 +6,12 @@ services:
   kuma-app:
     restart: unless-stopped
     deploy:
-      mode: global
       resources:
         limits:
           memory: 500M
   kuma-mysql:
     restart: unless-stopped
     deploy:
-      mode: global
       resources:
         limits:
           memory: 500M
